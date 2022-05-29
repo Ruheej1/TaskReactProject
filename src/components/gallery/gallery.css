@@ -1,0 +1,56 @@
+.container-img{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.child-img {
+  list-style: none;
+  height: 40vh;
+  width: calc(100% * (1/4) - 10px);
+  flex: 1 0 25%;
+}
+
+.child-img:last-child {
+   flex-grow: 10;
+}
+
+img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-aspect-ratio: 1/1) {
+  .child-img {
+    height: 30vh;
+  }
+}
+
+/* // Short screens */
+
+@media (max-height: 480px) {
+  .child-img {
+    height: 80vh;
+  }
+}
+
+/* // Smaller screens in portrait */
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .container-img {
+    flex-direction: row;
+  }
+
+  .child-img {
+    height: auto;
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}

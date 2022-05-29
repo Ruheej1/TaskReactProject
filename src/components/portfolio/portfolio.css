@@ -1,0 +1,45 @@
+.portfolio{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+  }
+  
+  hr{
+    width: 50px;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid blue;
+    /* border-radius: 3px; */
+  }
+  
+  .btn-grp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  
+  }
+  .portbtn{
+  border-radius: 20px;
+  padding: 4px 25px;
+  margin-right: 30px;
+  
+  
+  } 
+  
+  .portbtn2{
+    border-radius: 20px;
+    padding: 4px 25px;
+    margin-right: 30px;
+  
+    } 
+
+    .portfolio-txt{
+      margin: auto;
+      padding: 0 250px 75px;
+      text-align: center;
+    
+    }
+    
+  
